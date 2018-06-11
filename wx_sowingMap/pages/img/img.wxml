@@ -1,0 +1,10 @@
+<!--pages/img/img.wxml-->
+<swiper autoplay="true" indicator-dots="true" style="height:{{height}}px;" >
+    <block wx:for="{{imgData}}" wx:key="{{index}}">
+        <swiper-item>
+            <image class='auto-img' bindload='setContainerHeight' src='{{item}}' mode="widthFix"></image>
+        </swiper-item>
+    </block>
+</swiper>
+
+
